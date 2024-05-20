@@ -52,16 +52,16 @@
     </div>
 </div>
 
-{{-- <section>
-    <div class="container">
-        @foreach ($comics as $comic)
+<section>
+    <div class="container-icon">
+        @foreach ($icons as $icon)
         <div class="icon-card">
-            <img :src="getImageUrl(icon.src)">
-            <span class="icon-text">{{ icon.text }}</span>
+            <img src="{{ Vite::asset($icon['img']) }}">
+            <span class="icon-text">{{ strtoupper($icon['link']) }}</span>
         </div>
         @endforeach
     </div>
-</section> --}}
+</section>
 @endsection
 
 @section('footer')

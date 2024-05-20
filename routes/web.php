@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = config('links');
+    $icons = config('section-icon');
     $comics = config('comics');
     $data = [
-        'links' => $links,
+        'icons' => $icons,
         'comics' => $comics
     ];
     return view('home', $data);
