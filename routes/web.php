@@ -16,9 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $icons = config('section-icon');
     $comics = config('comics');
+    $links = config('useful-link');
     $data = [
         'icons' => $icons,
-        'comics' => $comics
+        'comics' => $comics,
+        'links' => $links,
     ];
     return view('home', $data);
 })->name('home');

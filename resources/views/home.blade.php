@@ -62,6 +62,20 @@
         @endforeach
     </div>
 </section>
+
+<section class="link-section">
+    <div class="link-container">
+        <nav >
+            @foreach ($links as $link)
+            <ul>
+                @foreach ($link as $link2)
+                    <li><a href="#">{{ $link2 }}</a></li>
+                @endforeach
+            </ul>
+        @endforeach
+        </nav>
+    </div>
+</section>
 @endsection
 
 @section('footer')
