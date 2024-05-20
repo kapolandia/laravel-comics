@@ -79,5 +79,27 @@
 @endsection
 
 @section('footer')
-bub
+<section class="footer-section">
+    <div class="footer-container">
+        <button type="button" class="footer-button">sign-up now!</button>
+        <div class="social">
+            <span>follow us</span>
+            <a href="#" >
+                <img src="{{ Vite::asset("resources/images/footer-facebook.png") }}" alt="">
+            </a>
+            <a href="#" >
+                <img src="{{ Vite::asset("resources/images/footer-periscope.png") }}" alt="">
+            </a>
+            <a href="#" >
+                <img src="{{ Vite::asset("resources/images/footer-pinterest.png") }}" alt="">
+            </a>
+            <a href="#" >
+                <img src="{{ Vite::asset("resources/images/footer-twitter.png") }}" alt="">
+            </a>
+            <a href="#" >
+                <img src="{{ Vite::asset("resources/images/footer-youtube.png") }}" alt="">
+            </a>
+        </div>
+    </div>
+</section>
 @endsection
